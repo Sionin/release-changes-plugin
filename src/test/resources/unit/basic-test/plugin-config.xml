@@ -1,0 +1,29 @@
+<project>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.github.sionin</groupId>
+                <artifactId>release-changes-plugin</artifactId>
+                <configuration>
+                    <smtphost>localhost</smtphost>
+                    <smtpport>25</smtpport>
+                    <title>Unittests</title>
+                    <recipients>
+                        <recipient>a@localhost</recipient>
+                        <recipient>b@localhost</recipient>
+                    </recipients>
+                    <ccRecipients>
+                        <ccRecipient>c@localhost</ccRecipient>
+                        <ccRecipient>d@localhost</ccRecipient>
+                    </ccRecipients>
+                    <bccRecipients>
+                        <bccRecipient>e@localhost</bccRecipient>
+                        <bccRecipient>f@localhost</bccRecipient>
+                    </bccRecipients>
+                    <from>maven@localhost</from>
+                    <!--<body>test</body>-->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
